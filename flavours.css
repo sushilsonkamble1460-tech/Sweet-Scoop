@@ -1,0 +1,1347 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap');
+
+/*=========================================
+            RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#FFF8F0;
+    color:#4b2414;
+    overflow-x:hidden;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+/*=========================================
+            NAVBAR
+=========================================*/
+
+header{
+
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#FFF8F0;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.logo h2{
+
+    font-family:'Pacifico',cursive;
+    color:#6B3E26;
+    font-size:34px;
+
+}
+
+.logo span{
+
+    display:block;
+    letter-spacing:4px;
+    font-size:12px;
+    color:#B87A42;
+    margin-top:5px;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:#4b2414;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-links a:hover,
+.nav-links .active{
+
+    color:#B86B2C;
+
+}
+
+.icons{
+
+    display:flex;
+    gap:20px;
+    font-size:20px;
+    cursor:pointer;
+
+}
+
+.icons i{
+
+    transition:.3s;
+
+}
+
+.icons i:hover{
+
+    color:#B86B2C;
+    transform:scale(1.2);
+
+}
+
+.menu-btn{
+
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+
+}
+
+/*=========================================
+          HERO
+=========================================*/
+
+.flavour-hero{
+
+    margin-top:90px;
+
+    background:linear-gradient(135deg,#FFE6C8,#FFF8F0);
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+.flavour-hero h4{
+
+    color:#B86B2C;
+    font-size:24px;
+    margin-bottom:15px;
+
+}
+
+.flavour-hero h1{
+
+    font-size:60px;
+    color:#4b2414;
+    margin-bottom:20px;
+
+}
+
+.flavour-hero p{
+
+    color:#666;
+    font-size:18px;
+
+}
+
+/*=========================================
+        SEARCH BOX
+=========================================*/
+
+.search-section{
+
+    width:90%;
+    margin:50px auto;
+
+}
+
+.search-box{
+
+    display:flex;
+    max-width:700px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:50px;
+    background:#fff;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.search-box input{
+
+    flex:1;
+    padding:18px 25px;
+    border:none;
+    outline:none;
+    font-size:17px;
+
+}
+
+.search-box button{
+
+    width:80px;
+    border:none;
+    background:#6B3E26;
+    color:#fff;
+    cursor:pointer;
+    font-size:20px;
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    background:#B86B2C;
+
+}
+
+/*=========================================
+       CATEGORY BUTTONS
+=========================================*/
+
+.category{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+
+    margin-bottom:50px;
+
+}
+
+.category button{
+
+    border:none;
+    padding:12px 28px;
+    border-radius:40px;
+    background:#fff;
+    cursor:pointer;
+    font-weight:600;
+    color:#4b2414;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.category button:hover,
+.category .active{
+
+    background:#6B3E26;
+    color:#fff;
+
+}
+
+/*=========================================
+        FLAVOUR GRID
+=========================================*/
+
+.flavour-container{
+
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+
+    padding-bottom:60px;
+
+}
+
+/*=========================================
+          CARD
+=========================================*/
+
+.card{
+
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.image{
+
+    width:200px;
+    height:200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.image img{
+
+    max-width:180px;
+    transition:.4s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.1) rotate(-5deg);
+
+}
+
+.card h3{
+
+    margin:20px 0 10px;
+    font-size:24px;
+    color:#4b2414;
+
+}
+
+/*=========================================
+           STARS
+=========================================*/
+
+.stars{
+
+    color:#FFC107;
+    margin-bottom:15px;
+    font-size:18px;
+
+}
+
+.card h2{
+
+    color:#B86B2C;
+    margin-bottom:20px;
+
+}
+
+/*=========================================
+            BUTTONS
+=========================================*/
+
+.buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+
+}
+
+.cart{
+
+    border:none;
+    padding:12px 22px;
+    border-radius:30px;
+    background:#6B3E26;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.cart:hover{
+
+    background:#B86B2C;
+
+}
+
+.heart{
+
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#FFE7E7;
+    color:#ff4b5c;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.heart:hover{
+
+    background:#ff4b5c;
+    color:#fff;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+.flavour-hero h1{
+
+font-size:48px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.icons{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.flavour-hero h1{
+
+font-size:38px;
+
+}
+
+.search-box{
+
+flex-direction:column;
+
+border-radius:20px;
+
+}
+
+.search-box button{
+
+width:100%;
+height:55px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.flavour-hero{
+
+padding:70px 15px;
+
+}
+
+.flavour-hero h1{
+
+font-size:30px;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+.image{
+
+width:160px;
+height:160px;
+
+}
+
+.image img{
+
+max-width:150px;
+
+}
+
+}
+/*=========================================
+            SPECIAL OFFER
+=========================================*/
+
+.offer{
+
+    width:100%;
+    padding:90px 8%;
+    background:linear-gradient(135deg,#6B3E26,#A85C2B);
+    color:#fff;
+    text-align:center;
+
+}
+
+.offer-content{
+
+    max-width:800px;
+    margin:auto;
+
+}
+
+.offer h4{
+
+    font-size:22px;
+    letter-spacing:2px;
+    margin-bottom:15px;
+    color:#FFD166;
+
+}
+
+.offer h2{
+
+    font-size:48px;
+    margin-bottom:20px;
+    font-weight:700;
+
+}
+
+.offer p{
+
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:35px;
+    color:#F5F5F5;
+
+}
+
+.offer .btn{
+
+    display:inline-block;
+    padding:15px 40px;
+    background:#fff;
+    color:#6B3E26;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+
+}
+
+.offer .btn:hover{
+
+    background:#FFD166;
+    transform:translateY(-5px);
+
+}
+
+/*=========================================
+          CUSTOMER REVIEWS
+=========================================*/
+
+.reviews{
+
+    padding:90px 8%;
+    background:#FFF8F0;
+    text-align:center;
+
+}
+
+.reviews h2{
+
+    font-size:42px;
+    color:#4b2414;
+    margin-bottom:50px;
+
+}
+
+.review-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.review-card{
+
+    background:#fff;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.review-card img{
+
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:auto;
+    margin-bottom:20px;
+    border:4px solid #B86B2C;
+
+}
+
+.review-card h3{
+
+    margin-bottom:15px;
+    color:#4b2414;
+
+}
+
+.review-card p{
+
+    color:#666;
+    line-height:28px;
+    margin-bottom:20px;
+
+}
+
+/*=========================================
+          NEWSLETTER
+=========================================*/
+
+.newsletter{
+
+    padding:90px 8%;
+    background:#FFF3E5;
+    text-align:center;
+
+}
+
+.newsletter h2{
+
+    font-size:42px;
+    margin-bottom:20px;
+    color:#4b2414;
+
+}
+
+.newsletter p{
+
+    color:#666;
+    margin-bottom:35px;
+
+}
+
+.newsletter form{
+
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    background:#fff;
+    border-radius:50px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.newsletter input{
+
+    flex:1;
+    border:none;
+    outline:none;
+    padding:18px 25px;
+    font-size:17px;
+
+}
+
+.newsletter button{
+
+    border:none;
+    padding:18px 40px;
+    background:#6B3E26;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.newsletter button:hover{
+
+    background:#B86B2C;
+
+}
+
+/*=========================================
+              FOOTER
+=========================================*/
+
+.footer{
+
+    background:#3D2012;
+    color:#fff;
+    padding:80px 8% 40px;
+
+}
+
+.footer-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+
+}
+
+.footer-box h2{
+
+    font-family:'Pacifico',cursive;
+    color:#FFD166;
+    margin-bottom:20px;
+
+}
+
+.footer-box h3{
+
+    color:#FFD166;
+    margin-bottom:20px;
+
+}
+
+.footer-box p{
+
+    color:#ddd;
+    line-height:28px;
+    margin-bottom:12px;
+
+}
+
+.footer-box ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-box ul li a{
+
+    color:#ddd;
+    transition:.3s;
+
+}
+
+.footer-box ul li a:hover{
+
+    color:#FFD166;
+    padding-left:8px;
+
+}
+
+/*=========================================
+          SOCIAL ICONS
+=========================================*/
+
+.social-icons{
+
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+
+}
+
+.social-icons a{
+
+    width:45px;
+    height:45px;
+    background:#5B301D;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:#FFD166;
+    color:#3D2012;
+    transform:translateY(-6px);
+
+}
+
+/*=========================================
+           COPYRIGHT
+=========================================*/
+
+.copyright{
+
+    background:#2A160D;
+    text-align:center;
+    padding:20px;
+    color:#ddd;
+    font-size:15px;
+
+}
+
+.copyright span{
+
+    color:#FFD166;
+}
+
+/*=========================================
+         FOOTER ICONS
+=========================================*/
+
+.footer-box i{
+
+    color:#FFD166;
+    margin-right:10px;
+
+}
+
+/*=========================================
+        NEWSLETTER RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+.newsletter form{
+
+flex-direction:column;
+border-radius:20px;
+
+}
+
+.newsletter input{
+
+width:100%;
+
+}
+
+.newsletter button{
+
+width:100%;
+
+}
+
+.offer h2{
+
+font-size:34px;
+
+}
+
+.reviews h2{
+
+font-size:34px;
+
+}
+
+.newsletter h2{
+
+font-size:34px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.offer{
+
+padding:70px 20px;
+
+}
+
+.offer h2{
+
+font-size:28px;
+
+}
+
+.review-card{
+
+padding:25px 20px;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+}
+/*=========================================
+        PREMIUM CARD HOVER EFFECT
+=========================================*/
+
+.card{
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -120%;
+    width: 250%;
+    height: 250%;
+    background: rgba(255,255,255,0.18);
+    transform: rotate(45deg);
+    transition: .8s;
+}
+
+.card:hover::before{
+    top: -40%;
+    left: -40%;
+}
+
+.card:hover{
+    box-shadow: 0 25px 50px rgba(0,0,0,.15);
+}
+
+/*=========================================
+      ICE CREAM IMAGE ANIMATION
+=========================================*/
+
+.image img{
+    animation: floatIce 4s ease-in-out infinite;
+}
+
+@keyframes floatIce{
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-12px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+/*=========================================
+        HEART BUTTON EFFECT
+=========================================*/
+
+.heart:hover{
+
+    transform: scale(1.2) rotate(15deg);
+
+}
+
+.heart:active{
+
+    transform: scale(.9);
+
+}
+
+/*=========================================
+        ADD TO CART EFFECT
+=========================================*/
+
+.cart{
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cart::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(255,255,255,.25);
+
+    transform:skewX(-30deg);
+
+    transition:.6s;
+
+}
+
+.cart:hover::before{
+
+    left:120%;
+
+}
+
+/*=========================================
+         REVIEW CARD EFFECT
+=========================================*/
+
+.review-card{
+
+    position:relative;
+
+}
+
+.review-card::after{
+
+    content:"★★★★★";
+
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    color:#FFD166;
+
+    font-size:14px;
+
+    opacity:.15;
+
+}
+
+/*=========================================
+       NEWSLETTER INPUT EFFECT
+=========================================*/
+
+.newsletter input:focus{
+
+    box-shadow: inset 0 0 0 2px #B86B2C;
+
+}
+
+/*=========================================
+      CATEGORY BUTTON EFFECT
+=========================================*/
+
+.category button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.category button::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    bottom:0;
+
+    width:0;
+    height:3px;
+
+    background:#FFD166;
+
+    transition:.4s;
+
+    transform:translateX(-50%);
+
+}
+
+.category button:hover::after{
+
+    width:80%;
+
+}
+
+/*=========================================
+         SOCIAL ICON EFFECT
+=========================================*/
+
+.social-icons a{
+
+    transition:.4s;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-8px) rotate(360deg);
+
+}
+
+/*=========================================
+          LOADER
+=========================================*/
+
+#loader{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:#FFF8F0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:.6s;
+
+}
+
+.loader-circle{
+
+    width:70px;
+    height:70px;
+
+    border:8px solid #E6D2C2;
+
+    border-top:8px solid #6B3E26;
+
+    border-radius:50%;
+
+    animation:loaderSpin 1s linear infinite;
+
+}
+
+@keyframes loaderSpin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*=========================================
+        SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F7EBDD;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#8B4513;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#6B3E26;
+
+}
+
+/*=========================================
+      TEXT SELECTION
+=========================================*/
+
+::selection{
+
+    background:#6B3E26;
+
+    color:#fff;
+
+}
+
+/*=========================================
+      SMOOTH FADE ANIMATION
+=========================================*/
+
+.card,
+.review-card,
+.offer-content,
+.newsletter,
+.footer-box{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+       ACTIVE NAV LINK
+=========================================*/
+
+.nav-links a.active{
+
+    color:#B86B2C;
+
+    font-weight:700;
+
+}
+
+/*=========================================
+        GLASS EFFECT
+=========================================*/
+
+.offer-content{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(8px);
+
+    padding:40px;
+
+    border-radius:20px;
+
+}
+
+/*=========================================
+        MOBILE MENU
+=========================================*/
+
+@media(max-width:768px){
+
+.nav-links{
+
+    position:absolute;
+
+    top:100%;
+    left:-100%;
+
+    width:100%;
+
+    background:#FFF8F0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:30px;
+
+    gap:20px;
+
+    transition:.5s;
+
+}
+
+.nav-links.active{
+
+    left:0;
+
+}
+
+}
+
+/*=========================================
+      EXTRA SMALL DEVICES
+=========================================*/
+
+@media(max-width:380px){
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+.flavour-hero h1{
+
+    font-size:26px;
+
+}
+
+.offer h2{
+
+    font-size:24px;
+
+}
+
+.newsletter h2{
+
+    font-size:28px;
+
+}
+
+.review-card p{
+
+    font-size:15px;
+
+}
+
+}
+
+/*=========================================
+          END OF FILE
+=========================================*/

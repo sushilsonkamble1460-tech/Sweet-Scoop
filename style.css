@@ -1,0 +1,1054 @@
+/* ==========================================
+   GOOGLE FONT & RESET
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFF7EE;
+    overflow-x:hidden;
+    color:#4d2c16;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999;
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 0;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo h2{
+
+    font-family:'Pacifico',cursive;
+    font-size:35px;
+    color:#4b2414;
+
+}
+
+.logo span{
+
+    display:block;
+
+    letter-spacing:4px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#9b6a3d;
+
+}
+
+/* ==========================================
+   MENU
+========================================== */
+
+.nav-links{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+
+.nav-links a{
+
+    color:#4b2414;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    transition:.4s;
+
+    position:relative;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0%;
+    height:2px;
+
+    background:#8B4513;
+
+    transition:.4s;
+
+}
+
+.nav-links a:hover::after,
+.nav-links .active::after{
+
+    width:100%;
+
+}
+
+.nav-links a:hover{
+
+    color:#8B4513;
+
+}
+
+/* ==========================================
+   ICONS
+========================================== */
+
+.icons{
+
+    display:flex;
+
+    gap:25px;
+
+    font-size:22px;
+
+    color:#4b2414;
+
+}
+
+.icons i{
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.icons i:hover{
+
+    color:#8B4513;
+
+    transform:scale(1.2);
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:#4b2414;
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:120px 8% 60px;
+
+    background:#FFF7EE;
+
+}
+
+/* ==========================================
+   HERO TEXT
+========================================== */
+
+.hero-text{
+
+    width:50%;
+
+}
+
+.hero-text h3{
+
+    font-size:40px;
+
+    color:#8B4513;
+
+    font-weight:500;
+
+}
+
+.hero-text h1{
+
+    font-size:95px;
+
+    color:#3b1d10;
+
+    line-height:100px;
+
+    margin:10px 0 25px;
+
+}
+
+.hero-text p{
+
+    width:80%;
+
+    font-size:18px;
+
+    line-height:30px;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:#6B3E26;
+
+    color:#fff;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:#8B4513;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 25px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+.hero-image{
+
+    width:45%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:90%;
+
+    animation:float 4s ease-in-out infinite;
+
+    filter:drop-shadow(0 30px 30px rgba(0,0,0,.25));
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.features{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-top:-20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:80px;
+
+    padding-bottom:50px;
+
+}
+
+.feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.feature i{
+
+    font-size:35px;
+
+    color:#8B4513;
+
+}
+
+.feature h4{
+
+    font-size:18px;
+
+    color:#4b2414;
+
+}
+
+.feature p{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   WAVE
+========================================== */
+
+.wave{
+
+    width:100%;
+
+    line-height:0;
+
+}
+
+.wave svg{
+
+    display:block;
+
+    width:100%;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding-top:150px;
+
+}
+
+.hero-text{
+
+width:100%;
+
+}
+
+.hero-text p{
+
+width:100%;
+
+}
+
+.hero-image{
+
+width:100%;
+
+margin-top:50px;
+
+}
+
+.features{
+
+flex-wrap:wrap;
+
+gap:40px;
+
+}
+
+}
+
+/* =============================== */
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.icons{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.hero-text h1{
+
+font-size:60px;
+
+line-height:70px;
+
+}
+
+.hero-text h3{
+
+font-size:28px;
+
+}
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+.btn{
+
+padding:13px 30px;
+
+}
+
+}
+
+/* =============================== */
+
+@media(max-width:480px){
+
+.logo h2{
+
+font-size:28px;
+
+}
+
+.hero-text h1{
+
+font-size:45px;
+
+line-height:55px;
+
+}
+
+.hero-text h3{
+
+font-size:24px;
+
+}
+
+.features{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}
+
+
+
+
+/*==================================================
+            STICKY NAVBAR
+==================================================*/
+
+header.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,247,238,0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+    animation: slideDown .6s ease;
+}
+
+@keyframes slideDown{
+
+    from{
+        transform: translateY(-100%);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+
+}
+
+/*==================================================
+                MOBILE MENU
+==================================================*/
+
+@media(max-width:768px){
+
+.nav-links{
+
+position:absolute;
+
+top:100%;
+
+left:-100%;
+
+width:100%;
+
+background:#FFF7EE;
+
+display:flex;
+
+flex-direction:column;
+
+padding:30px;
+
+gap:25px;
+
+transition:.5s;
+
+box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.nav-links.active{
+
+left:0;
+
+}
+
+.nav-links li{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.nav-links a{
+
+display:block;
+
+font-size:20px;
+
+padding:10px;
+
+}
+
+}
+
+/*==================================================
+              HERO TEXT ANIMATION
+==================================================*/
+
+.hero-text h3{
+
+animation:fadeLeft .8s ease;
+
+}
+
+.hero-text h1{
+
+animation:fadeLeft 1.2s ease;
+
+}
+
+.hero-text p{
+
+animation:fadeLeft 1.5s ease;
+
+}
+
+.btn{
+
+animation:fadeLeft 1.8s ease;
+
+}
+
+@keyframes fadeLeft{
+
+0%{
+
+opacity:0;
+
+transform:translateX(-80px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/*==================================================
+              HERO IMAGE EFFECT
+==================================================*/
+
+.hero-image img{
+
+transition:.5s;
+
+cursor:pointer;
+
+}
+
+.hero-image img:hover{
+
+transform:scale(1.05) rotate(-3deg);
+
+filter:drop-shadow(0 40px 40px rgba(0,0,0,.25));
+
+}
+
+/*==================================================
+            FEATURE CARD EFFECT
+==================================================*/
+
+.feature{
+
+padding:18px 22px;
+
+border-radius:15px;
+
+transition:.4s;
+
+}
+
+.feature:hover{
+
+background:#fff;
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+}
+
+.feature i{
+
+transition:.4s;
+
+}
+
+.feature:hover i{
+
+transform:rotate(15deg) scale(1.2);
+
+}
+
+/*==================================================
+               BUTTON EFFECT
+==================================================*/
+
+.btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:100%;
+
+height:100%;
+
+background:rgba(255,255,255,.25);
+
+transform:skewX(-30deg);
+
+transition:.6s;
+
+}
+
+.btn:hover::before{
+
+left:120%;
+
+}
+
+/*==================================================
+          NAV LINK HOVER ANIMATION
+==================================================*/
+
+.nav-links a{
+
+transition:.35s;
+
+}
+
+.nav-links a:hover{
+
+letter-spacing:1px;
+
+}
+
+/*==================================================
+             CUSTOM SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#F7EBDD;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#7A4A27;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#5A331A;
+
+}
+
+/*==================================================
+              SELECTION COLOR
+==================================================*/
+
+::selection{
+
+background:#6B3E26;
+
+color:#fff;
+
+}
+
+/*==================================================
+             BACKGROUND DECORATION
+==================================================*/
+
+.hero{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+border-radius:50%;
+
+background:rgba(255,210,170,.25);
+
+top:80px;
+
+right:-80px;
+
+z-index:-1;
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+background:rgba(255,190,120,.18);
+
+bottom:40px;
+
+left:-60px;
+
+z-index:-1;
+
+}
+
+/*==================================================
+             ICON ANIMATION
+==================================================*/
+
+.icons i{
+
+position:relative;
+
+}
+
+.icons i:hover{
+
+animation:bounce .6s;
+
+}
+
+@keyframes bounce{
+
+0%{transform:translateY(0);}
+30%{transform:translateY(-8px);}
+60%{transform:translateY(0);}
+80%{transform:translateY(-3px);}
+100%{transform:translateY(0);}
+
+}
+
+/*==================================================
+             LOGO EFFECT
+==================================================*/
+
+.logo h2{
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.logo:hover h2{
+
+color:#8B4513;
+
+transform:scale(1.05);
+
+}
+
+/*==================================================
+             IMAGE SHADOW
+==================================================*/
+
+.hero-image{
+
+position:relative;
+
+}
+
+.hero-image::before{
+
+content:"";
+
+position:absolute;
+
+bottom:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:65%;
+
+height:30px;
+
+background:rgba(0,0,0,.18);
+
+filter:blur(20px);
+
+border-radius:50%;
+
+z-index:-1;
+
+}
+
+/*==================================================
+             SMOOTH TRANSITION
+==================================================*/
+
+*{
+
+transition:background .3s,color .3s;
+
+}
+
+/*==================================================
+            LARGE SCREEN
+==================================================*/
+
+@media(min-width:1400px){
+
+.hero{
+
+padding-left:10%;
+
+padding-right:10%;
+
+}
+
+.hero-text h1{
+
+font-size:110px;
+
+line-height:115px;
+
+}
+
+.hero-text p{
+
+font-size:20px;
+
+}
+
+}
+
+/*==================================================
+            SMALL MOBILE
+==================================================*/
+
+@media(max-width:380px){
+
+.hero{
+
+padding-top:120px;
+
+}
+
+.hero-text h1{
+
+font-size:38px;
+
+line-height:45px;
+
+}
+
+.hero-text h3{
+
+font-size:22px;
+
+}
+
+.btn{
+
+font-size:15px;
+
+padding:12px 24px;
+
+}
+
+.logo h2{
+
+font-size:24px;
+
+}
+
+}
+
+/*==================================================
+              END OF CSS
+==================================================*/
